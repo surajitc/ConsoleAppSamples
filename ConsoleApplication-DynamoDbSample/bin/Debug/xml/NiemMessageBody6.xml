@@ -1,0 +1,44 @@
+﻿<GetDriverHistoryRequestType xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://aamva.org/xsd/cdlis/exchange/cdi1/6.0">
+  <NetworkControl xmlns="http://aamva.org/xsd/aamva/extensions/1.0">
+    <AddressData>
+      <TransactionOriginatorID>Z3</TransactionOriginatorID>
+      <MessageOriginatorID>Z3</MessageOriginatorID>
+      <DestinationID>A4</DestinationID>
+    </AddressData>
+    <TransactionLocatorID>1708081746060000    1UNISB</TransactionLocatorID>
+    <TransactionReturnAsReceived>
+      <TransactionReturnAsReceivedText>return as RECEIVED</TransactionReturnAsReceivedText>
+    </TransactionReturnAsReceived>
+    <TransactionReturnAsReceived>
+      <TransactionReturnAsReceivedText>return as RECEIVED</TransactionReturnAsReceivedText>
+    </TransactionReturnAsReceived>
+    <TransactionReturnAsReceived>
+      <TransactionReturnAsReceivedText>return as RECEIVED</TransactionReturnAsReceivedText>
+    </TransactionReturnAsReceived>
+    <TransactionReturnAsReceived>
+      <TransactionReturnAsReceivedText>return as RECEIVED</TransactionReturnAsReceivedText>
+    </TransactionReturnAsReceived>
+  </NetworkControl>
+  <CDLISReleaseCode xmlns="http://aamva.org/xsd/aamva/extensions/1.0">F</CDLISReleaseCode>
+  <DocumentCategoryCode xmlns="http://aamva.org/xsd/aamva/extensions/1.0">9</DocumentCategoryCode>
+  <DocumentREALIDCode xmlns="http://aamva.org/xsd/aamva/extensions/1.0">9</DocumentREALIDCode>
+  <SPEXSRoleCode xmlns="http://aamva.org/xsd/aamva/extensions/1.0">1</SPEXSRoleCode>
+  <PersonName xmlns="http://aamva.org/xsd/aamva/extensions/1.0">
+    <PersonGivenName>
+      <PersonNameText />
+    </PersonGivenName>
+    <PersonMiddleName>
+      <PersonNameText />
+    </PersonMiddleName>
+    <PersonSurName>
+      <PersonNameText>0000 123 ()@LAST NAME</PersonNameText>
+      <TruncationCode>N</TruncationCode>
+      <TransliterationCode>N</TransliterationCode>
+    </PersonSurName>
+  </PersonName>
+  <PersonSSNLast5Identification xmlns="http://aamva.org/xsd/aamva/extensions/1.0">
+    <IdentificationID xmlns="http://niem.gov/niem/niem-core/2.0">99202</IdentificationID>
+  </PersonSSNLast5Identification>
+  <PersonSSNCategoryCode xmlns="http://aamva.org/xsd/aamva/extensions/1.0">A</PersonSSNCategoryCode>
+  <SPEXSReturnAsReceivedBinaryObject xmlns="http://aamva.org/xsd/aamva/extensions/1.0">ICAgIDA1OTRBNCAgICAgWjMgICAgIDE3MDgwODE3NDYwNjAwMDAzN1NCMDFZMDhZVDFOWjMgICAgIDAwMCAgICAgMDIyMDExNzA4MDgxNzQ2MDYwMDAwICAgIDFVTklTQiAgICAgMDAgICAgICAgICAgIDEgICAgICAgICBZICAgIEYgMDkxMDEgICAgICAgICAgICAgICAgICAgICAgICAgICAyMzIzOTkyMDI5OTkyMDJBOSAgICAgICAgICAgICAgICAgMTBKMDEwMDAwIDEyMyAoKUBMQVNUIE5BTUUgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgMTBOMDEgIE4gIE4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgMjQzMDFyZXR1cm4gYXMgUkVDRUlWRUQgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgMjQzMDJyZXR1cm4gYXMgUkVDRUlWRUQgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgMjQzMDNyZXR1cm4gYXMgUkVDRUlWRUQgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgMjQzMDRyZXR1cm4gYXMgUkVDRUlWRUQgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg</SPEXSReturnAsReceivedBinaryObject>
+</GetDriverHistoryRequestType>

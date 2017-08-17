@@ -1,0 +1,54 @@
+C:\AAMVA Software Development General\STEP\POC\ConsoleApplication-DynamoDbSample\ConsoleApplication-DynamoDbSample\bin\Debug\ConsoleApplication-DynamoDbSample.exe.config
+C:\AAMVA Software Development General\STEP\POC\ConsoleApplication-DynamoDbSample\ConsoleApplication-DynamoDbSample\bin\Debug\ConsoleApplication-DynamoDbSample.exe
+C:\AAMVA Software Development General\STEP\POC\ConsoleApplication-DynamoDbSample\ConsoleApplication-DynamoDbSample\bin\Debug\ConsoleApplication-DynamoDbSample.pdb
+C:\AAMVA Software Development General\STEP\POC\ConsoleApplication-DynamoDbSample\ConsoleApplication-DynamoDbSample\bin\Debug\AWSSDK.Core.dll
+C:\AAMVA Software Development General\STEP\POC\ConsoleApplication-DynamoDbSample\ConsoleApplication-DynamoDbSample\bin\Debug\AWSSDK.DynamoDBv2.dll
+C:\AAMVA Software Development General\STEP\POC\ConsoleApplication-DynamoDbSample\ConsoleApplication-DynamoDbSample\bin\Debug\AWSSDK.Core.pdb
+C:\AAMVA Software Development General\STEP\POC\ConsoleApplication-DynamoDbSample\ConsoleApplication-DynamoDbSample\bin\Debug\AWSSDK.Core.xml
+C:\AAMVA Software Development General\STEP\POC\ConsoleApplication-DynamoDbSample\ConsoleApplication-DynamoDbSample\bin\Debug\AWSSDK.DynamoDBv2.pdb
+C:\AAMVA Software Development General\STEP\POC\ConsoleApplication-DynamoDbSample\ConsoleApplication-DynamoDbSample\bin\Debug\AWSSDK.DynamoDBv2.xml
+C:\AAMVA Software Development General\STEP\POC\ConsoleApplication-DynamoDbSample\ConsoleApplication-DynamoDbSample\obj\Debug\ConsoleApplication-DynamoDbSample.csprojResolveAssemblyReference.cache
+C:\AAMVA Software Development General\STEP\POC\ConsoleApplication-DynamoDbSample\ConsoleApplication-DynamoDbSample\obj\Debug\ConsoleApplication-DynamoDbSample.exe
+C:\AAMVA Software Development General\STEP\POC\ConsoleApplication-DynamoDbSample\ConsoleApplication-DynamoDbSample\obj\Debug\ConsoleApplication-DynamoDbSample.pdb
+C:\Work\AWS\ConsoleApplication-DynamoDbSample\ConsoleApplication-DynamoDbSample\bin\Debug\ConsoleApplication-DynamoDbSample.exe.config
+C:\Work\AWS\ConsoleApplication-DynamoDbSample\ConsoleApplication-DynamoDbSample\bin\Debug\ConsoleApplication-DynamoDbSample.exe
+C:\Work\AWS\ConsoleApplication-DynamoDbSample\ConsoleApplication-DynamoDbSample\bin\Debug\ConsoleApplication-DynamoDbSample.pdb
+C:\Work\AWS\ConsoleApplication-DynamoDbSample\ConsoleApplication-DynamoDbSample\bin\Debug\AWSSDK.Core.dll
+C:\Work\AWS\ConsoleApplication-DynamoDbSample\ConsoleApplication-DynamoDbSample\bin\Debug\AWSSDK.DynamoDBv2.dll
+C:\Work\AWS\ConsoleApplication-DynamoDbSample\ConsoleApplication-DynamoDbSample\bin\Debug\AWSSDK.Core.pdb
+C:\Work\AWS\ConsoleApplication-DynamoDbSample\ConsoleApplication-DynamoDbSample\bin\Debug\AWSSDK.Core.xml
+C:\Work\AWS\ConsoleApplication-DynamoDbSample\ConsoleApplication-DynamoDbSample\bin\Debug\AWSSDK.DynamoDBv2.pdb
+C:\Work\AWS\ConsoleApplication-DynamoDbSample\ConsoleApplication-DynamoDbSample\bin\Debug\AWSSDK.DynamoDBv2.xml
+C:\Work\AWS\ConsoleApplication-DynamoDbSample\ConsoleApplication-DynamoDbSample\obj\Debug\ConsoleApplication-DynamoDbSample.csprojResolveAssemblyReference.cache
+C:\Work\AWS\ConsoleApplication-DynamoDbSample\ConsoleApplication-DynamoDbSample\obj\Debug\ConsoleApplication-DynamoDbSample.exe
+C:\Work\AWS\ConsoleApplication-DynamoDbSample\ConsoleApplication-DynamoDbSample\obj\Debug\ConsoleApplication-DynamoDbSample.pdb
+C:\AAMVA Software Development General\STEP\POC\ConsoleApplication-DynamoDbSample2\ConsoleApplication-DynamoDbSample\ConsoleApplication-DynamoDbSample\bin\Debug\ConsoleApplication-DynamoDbSample.exe.config
+C:\AAMVA Software Development General\STEP\POC\ConsoleApplication-DynamoDbSample2\ConsoleApplication-DynamoDbSample\ConsoleApplication-DynamoDbSample\obj\Debug\ConsoleApplication-DynamoDbSample.exe
+C:\AAMVA Software Development General\STEP\POC\ConsoleApplication-DynamoDbSample2\ConsoleApplication-DynamoDbSample\ConsoleApplication-DynamoDbSample\obj\Debug\ConsoleApplication-DynamoDbSample.pdb
+C:\AAMVA Software Development General\STEP\POC\ConsoleApplication-DynamoDbSample2\ConsoleApplication-DynamoDbSample\ConsoleApplication-DynamoDbSample\bin\Debug\ConsoleApplication-DynamoDbSample.exe
+C:\AAMVA Software Development General\STEP\POC\ConsoleApplication-DynamoDbSample2\ConsoleApplication-DynamoDbSample\ConsoleApplication-DynamoDbSample\bin\Debug\ConsoleApplication-DynamoDbSample.pdb
+C:\AAMVA Software Development General\STEP\POC\ConsoleApplication-DynamoDbSample2\ConsoleApplication-DynamoDbSample\ConsoleApplication-DynamoDbSample\bin\Debug\AWSSDK.Core.dll
+C:\AAMVA Software Development General\STEP\POC\ConsoleApplication-DynamoDbSample2\ConsoleApplication-DynamoDbSample\ConsoleApplication-DynamoDbSample\bin\Debug\AWSSDK.DynamoDBv2.dll
+C:\AAMVA Software Development General\STEP\POC\ConsoleApplication-DynamoDbSample2\ConsoleApplication-DynamoDbSample\ConsoleApplication-DynamoDbSample\bin\Debug\Newtonsoft.Json.dll
+C:\AAMVA Software Development General\STEP\POC\ConsoleApplication-DynamoDbSample2\ConsoleApplication-DynamoDbSample\ConsoleApplication-DynamoDbSample\bin\Debug\AWSSDK.Core.pdb
+C:\AAMVA Software Development General\STEP\POC\ConsoleApplication-DynamoDbSample2\ConsoleApplication-DynamoDbSample\ConsoleApplication-DynamoDbSample\bin\Debug\AWSSDK.Core.xml
+C:\AAMVA Software Development General\STEP\POC\ConsoleApplication-DynamoDbSample2\ConsoleApplication-DynamoDbSample\ConsoleApplication-DynamoDbSample\bin\Debug\AWSSDK.DynamoDBv2.pdb
+C:\AAMVA Software Development General\STEP\POC\ConsoleApplication-DynamoDbSample2\ConsoleApplication-DynamoDbSample\ConsoleApplication-DynamoDbSample\bin\Debug\AWSSDK.DynamoDBv2.xml
+C:\AAMVA Software Development General\STEP\POC\ConsoleApplication-DynamoDbSample2\ConsoleApplication-DynamoDbSample\ConsoleApplication-DynamoDbSample\bin\Debug\Newtonsoft.Json.xml
+C:\AAMVA Software Development General\STEP\POC\ConsoleApplication-DynamoDbSample2\ConsoleApplication-DynamoDbSample\ConsoleApplication-DynamoDbSample\obj\Debug\ConsoleApplication-DynamoDbSample.csprojResolveAssemblyReference.cache
+C:\Work\AWS\ConsoleApplication-DynamoDbSample\ConsoleApplication-DynamoDbSample\bin\Debug\Newtonsoft.Json.dll
+C:\Work\AWS\ConsoleApplication-DynamoDbSample\ConsoleApplication-DynamoDbSample\bin\Debug\Newtonsoft.Json.xml
+C:\AAMVA Software Development General\STEP\POC\ConsoleApplication-DynamoDbSample-v3\ConsoleApplication-DynamoDbSample\ConsoleApplication-DynamoDbSample\bin\Debug\ConsoleApplication-DynamoDbSample.exe.config
+C:\AAMVA Software Development General\STEP\POC\ConsoleApplication-DynamoDbSample-v3\ConsoleApplication-DynamoDbSample\ConsoleApplication-DynamoDbSample\obj\Debug\ConsoleApplication-DynamoDbSample.exe
+C:\AAMVA Software Development General\STEP\POC\ConsoleApplication-DynamoDbSample-v3\ConsoleApplication-DynamoDbSample\ConsoleApplication-DynamoDbSample\obj\Debug\ConsoleApplication-DynamoDbSample.pdb
+C:\AAMVA Software Development General\STEP\POC\ConsoleApplication-DynamoDbSample-v3\ConsoleApplication-DynamoDbSample\ConsoleApplication-DynamoDbSample\bin\Debug\ConsoleApplication-DynamoDbSample.exe
+C:\AAMVA Software Development General\STEP\POC\ConsoleApplication-DynamoDbSample-v3\ConsoleApplication-DynamoDbSample\ConsoleApplication-DynamoDbSample\bin\Debug\ConsoleApplication-DynamoDbSample.pdb
+C:\AAMVA Software Development General\STEP\POC\ConsoleApplication-DynamoDbSample-v3\ConsoleApplication-DynamoDbSample\ConsoleApplication-DynamoDbSample\bin\Debug\AWSSDK.Core.dll
+C:\AAMVA Software Development General\STEP\POC\ConsoleApplication-DynamoDbSample-v3\ConsoleApplication-DynamoDbSample\ConsoleApplication-DynamoDbSample\bin\Debug\AWSSDK.DynamoDBv2.dll
+C:\AAMVA Software Development General\STEP\POC\ConsoleApplication-DynamoDbSample-v3\ConsoleApplication-DynamoDbSample\ConsoleApplication-DynamoDbSample\bin\Debug\AWSSDK.Core.pdb
+C:\AAMVA Software Development General\STEP\POC\ConsoleApplication-DynamoDbSample-v3\ConsoleApplication-DynamoDbSample\ConsoleApplication-DynamoDbSample\bin\Debug\AWSSDK.Core.xml
+C:\AAMVA Software Development General\STEP\POC\ConsoleApplication-DynamoDbSample-v3\ConsoleApplication-DynamoDbSample\ConsoleApplication-DynamoDbSample\bin\Debug\AWSSDK.DynamoDBv2.pdb
+C:\AAMVA Software Development General\STEP\POC\ConsoleApplication-DynamoDbSample-v3\ConsoleApplication-DynamoDbSample\ConsoleApplication-DynamoDbSample\bin\Debug\AWSSDK.DynamoDBv2.xml
+C:\AAMVA Software Development General\STEP\POC\ConsoleApplication-DynamoDbSample-v3\ConsoleApplication-DynamoDbSample\ConsoleApplication-DynamoDbSample\obj\Debug\ConsoleApplication-DynamoDbSample.csprojResolveAssemblyReference.cache
+C:\AAMVA Software Development General\STEP\POC\ConsoleApplication-DynamoDbSample-v3\ConsoleApplication-DynamoDbSample\ConsoleApplication-DynamoDbSample\bin\Debug\xml\NiemMessageBody5.xml
+C:\AAMVA Software Development General\STEP\POC\ConsoleApplication-DynamoDbSample-v3\ConsoleApplication-DynamoDbSample\ConsoleApplication-DynamoDbSample\bin\Debug\xml\NiemMessageBody6.xml

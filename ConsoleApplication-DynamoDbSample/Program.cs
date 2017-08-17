@@ -362,32 +362,6 @@ namespace ConsoleApplication_DynamoDbSample
         }
 
 
-        //private static void WriteToTransLog(DynamoDBContext dbContext, int i)
-        //{
-        //    try
-        //    {
-        //        var transLog = new TransactionLog()
-        //        {
-        //            Id = $"{i}",
-        //            AppID = 37.ToString(),
-        //            IsInbound = true,
-        //            LogDate = DateTime.Now.Date.ToString(CultureInfo.InvariantCulture),
-        //            MsgDestination = "XX",
-        //            MsgOrigin = "A4",
-        //            TransOrigin = "A4",
-        //            MsgLocator = GetLocator(),
-        //            MsgType = i % 2 == 0 ? "UG" : "UA",
-        //            RequestMessage = Encoding.ASCII.GetBytes("Request Message ........")
-        //        };
-        //        dbContext.Save(transLog);
-        //    }
-        //    catch (Exception e)
-        //    {
-        //        Console.WriteLine(e);
-        //        //throw;
-        //    }
-        //}
-
         private static string GetLocator()
         {
             string locator = DateTime.Now.Date.ToLongDateString() +":" + DateTime.Now.ToLongTimeString() + ":" +
@@ -440,18 +414,7 @@ namespace ConsoleApplication_DynamoDbSample
         {
             try
             {
-                //QueryRequest queryRequest = new QueryRequest()
-                //{
-                //    TableName = transLogTableName,
-                //    IndexName = "AppID-MsgOrigin-index",
-                //    KeyConditionExpression = "TransOrigin = :v_TrO and MsgType = :v_MT",
-                //    ExpressionAttributeValues = new Dictionary<string, AttributeValue>
-                //    {
-                //        { "v_TrO", new AttributeValue() {S = "A4" }},
-                //        {"MsgType", new AttributeValue() {S = "UA"}}
-                //    },
-                //    ConsistentRead = true
-                //};
+              
                 DateTime time = DateTime.Now;
 
                 var results = dbContext.Query<TransactionLog>("37", new DynamoDBOperationConfig
