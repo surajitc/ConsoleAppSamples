@@ -15,7 +15,7 @@ using Amazon.Runtime.CredentialManagement;
 
 namespace ConsoleApplication_DynamoDbSample
 {
-    public class MessageProps
+    public class MessageProp
     {
         public string TransOrigin { get; set; }
         public string MessageOrigin { get; set; }
@@ -58,22 +58,13 @@ namespace ConsoleApplication_DynamoDbSample
         {
             DynamoDBContext context = null;
             AmazonDynamoDBClient client = null;
-            byte[] reqBytes;
-            byte[] responseBytes;
-
+  
             try
             {
                 
-                //Console.WriteLine("Transaction table pre-created - hit enter to delete all");
-                //Console.ReadLine();
-
-                //Delete(context);
-                Console.WriteLine($"Directory = {Directory.GetCurrentDirectory()}");
-                var path = ReadFilePath();
-                reqBytes = ReadFile(path, "NiemMessageBody6.xml");
-                responseBytes = ReadFile(path, "NiemMessageBody5.xml");
+                Console.WriteLine("Transaction table pre-created - hit enter to start");
                 Console.ReadLine();
-
+             
                 client = SetupDynamo();
                 // var credentials = InitializeProfile();
                 //CreateExampleTable(client);
@@ -88,7 +79,7 @@ namespace ConsoleApplication_DynamoDbSample
 
                 for (int i = 0; i < 500000; i++)
                 {
-                    WriteToTransLog(context, i, reqBytes, responseBytes);
+                    WriteToTransLog(context, i);
                     Console.WriteLine($"Wrote record number {i}");
                 }
                 Console.WriteLine("Transaction table populated with 500000 records - hit enter to continue and read");
@@ -150,6 +141,16 @@ namespace ConsoleApplication_DynamoDbSample
             return dbContext;
         }
 
+        private static byte[] ReturnContent(bool isRequest)
+        {
+            var useXmlPayload = ConfigurationManager.AppSettings["UseXmlPayload"];
+            if (string.IsNullOrEmpty(useXmlPayload) || useXmlPayload.Equals("false"))
+            {
+                return Encoding.ASCII.GetBytes(isRequest ? "my string" : "my response");
+            }
+            return ReadFile(isRequest ? "NiemMessageBody6.xml" : "NiemMessageBody5.xml");
+        }
+
         private static string ReadFilePath()
         {
             string path = Directory.GetCurrentDirectory();
@@ -158,9 +159,9 @@ namespace ConsoleApplication_DynamoDbSample
             return xmlfilePath;
         }
 
-        private static byte[] ReadFile(string path, string filename)
+        private static byte[] ReadFile(string filename)
         {
-            string xmlPath = path + "\\" + filename;
+            string xmlPath = ReadFilePath() + "\\" + filename;
              
             byte[] contBytes = File.ReadAllBytes(xmlPath);
 
@@ -276,14 +277,11 @@ namespace ConsoleApplication_DynamoDbSample
             WaitUntilTableReady(client, tableName);
         }
 
-        private static void WriteToTransLog(DynamoDBContext dbContext, int i, byte[] reqBytes, byte[] responseBytes)
+        private static MessageProp GetMessageProp()
         {
-            Random _randomOps, _randomProps;
-
-
-            List<MessageProps> _messageProps = new List<MessageProps>()
+            List<MessageProp> messageProps = new List<MessageProp>()
             {
-                new MessageProps()
+                new MessageProp()
                 {
                     TransOrigin = "A4",
                     MessageOrigin = "A4",
@@ -292,7 +290,7 @@ namespace ConsoleApplication_DynamoDbSample
                     AppId = "37",
                     LocatorPrefix = ConfigurationManager.AppSettings["LocatorPrefix1"]
                 },
-                new MessageProps()
+                new MessageProp()
                 {
                     TransOrigin = "A4",
                     MessageOrigin = "A6",
@@ -301,7 +299,7 @@ namespace ConsoleApplication_DynamoDbSample
                     AppId = "37",
                     LocatorPrefix = ConfigurationManager.AppSettings["LocatorPrefix2"]
                 },
-                new MessageProps()
+                new MessageProp()
                 {
                     TransOrigin = "A5",
                     MessageOrigin = "A5",
@@ -310,7 +308,7 @@ namespace ConsoleApplication_DynamoDbSample
                     AppId = "02",
                     LocatorPrefix = ConfigurationManager.AppSettings["LocatorPrefix3"]
                 },
-                new MessageProps()
+                new MessageProp()
                 {
                     TransOrigin = "A5",
                     MessageOrigin = "XX",
@@ -321,18 +319,20 @@ namespace ConsoleApplication_DynamoDbSample
                 }
             };
 
-            _randomProps = new Random();
-            _randomOps = new Random();
+            var randomProps = new Random();
 
-            var messageProp = _messageProps[_randomProps.Next(0, _messageProps.Count)];
+            var messageProp = messageProps[randomProps.Next(0, messageProps.Count)];
 
-            int operationNumber = _randomOps.Next(1, 4);
+            return messageProp;
 
-            Write(dbContext, i, messageProp.TransOrigin, messageProp.MessageOrigin, messageProp.MessageDestination, messageProp.MessageDestination, reqBytes, responseBytes);
+        }
+        private static void WriteToTransLog(DynamoDBContext dbContext, int i)
+        {
+            var messageProp = GetMessageProp();
+            Write(dbContext, i, messageProp.TransOrigin, messageProp.MessageOrigin, messageProp.MessageDestination, messageProp.MessageDestination);
         }
 
-        public static void Write(DynamoDBContext dbContext, int i, string transOrigin, string messageOrigin, string messageDest, string msgType,
-                                 byte[] reqBytes, byte[] respBytes)
+        public static void Write(DynamoDBContext dbContext, int i, string transOrigin, string messageOrigin, string messageDest, string msgType)
         {
 
             try
@@ -348,8 +348,8 @@ namespace ConsoleApplication_DynamoDbSample
                     TransOrigin = transOrigin,
                     MsgLocator = GetLocator(),
                     MsgType = msgType,
-                    RequestMessage = reqBytes,
-                    ResponseMessage = respBytes,
+                    RequestMessage = ReturnContent(isRequest:true),
+                    ResponseMessage = ReturnContent(isRequest:false),
                     LogTime = DateTime.Now.ToLocalTime(),
                     SentTime = DateTime.Now.ToLocalTime()
                 };
@@ -390,7 +390,7 @@ namespace ConsoleApplication_DynamoDbSample
                 DateTime time = DateTime.Now;
 
                 var results = dbContext.Query<TransactionLog>("A4", QueryOperator.BeginsWith, 
-                                        DateTime.Now.Date.ToLongDateString());
+                                        GetMessageProp().LocatorPrefix);
 
                 DateTime time2 = DateTime.Now;
 
