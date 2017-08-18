@@ -149,6 +149,7 @@ namespace ConsoleApplication_DynamoDbSample
                 return Encoding.ASCII.GetBytes(isRequest ? "my string" : "my response");
             }
             return ReadFile(isRequest ? "NiemMessageBody6.xml" : "NiemMessageBody5.xml");
+
         }
 
         private static string ReadFilePath()
